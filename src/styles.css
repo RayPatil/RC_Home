@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~swiper/swiper-bundle';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* font */
+@font-face {
+  font-family: MonumentUB;
+  src: url(../src/assets/font/MonumentExtended-Regular.otf);
+}
+
+/* Navbar */
+.navbar-right {
+  float: right;
+}
+
+.navbar {
+  font-family: MonumentUB;
+}
+
+.nav-link{
+    color: #1b1b1b !important;
+}
+
+.navSp {
+width: 200px;
+height: 40px;
+background-color: #f4b318;
+text-align: center;
+margin-right: 2px;
+  border-radius: 25px;
+  color: white !important;
+}

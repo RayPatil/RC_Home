@@ -1,0 +1,162 @@
+.slide{
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+.outer-wrapper{
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+
+html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+
+
+
+/* font */
+@font-face {
+  font-family: MonumentUB;
+  src: url(../../assets/font/MonumentExtended-Regular.otf);
+}
+/* background */
+body {
+  background-image: url("../../assets/img/RC_Homepage_Bg.jpg") !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ }
+/* Navbar */
+ .navbar-right {
+  float: right;
+}
+
+.navbar {
+  font-family: MonumentUB;
+}
+
+.nav-link{
+    color: #1b1b1b !important;
+}
+
+.navSp {
+width: 200px;
+height: 40px;
+background-color: #f4b318;
+text-align: center;
+margin-right: 2px;
+  border-radius: 25px;
+  color: white !important;
+}
+
+/* Card */
+.w3-card-4{
+  box-shadow:0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+  font-family: MonumentUB;
+}
+
+.w3-container{
+  padding:0.01em 16px;
+}
+
+.cardR{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  --bs-gutter-x : 0 !important;
+  background-image: url("../../assets/img/RC_Homepage_Bg.jpg") !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.rotated {
+transform: rotate(-2deg); /* Equal to rotateZ(45deg) */
+}
+
+.rotated2 {
+transform: rotate(2deg); /* Equal to rotateZ(45deg) */
+}
+
+/* Social Link */
+.fa2 {
+  padding: 8px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center !important;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #f4b318;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #f4b318;
+  color: white;
+}
+
+.fa-instagram {
+  background: #f4b318;
+  color: white;
+}
+
+
