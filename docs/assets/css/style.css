@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* font */
+@font-face {
+    font-family: MonumentUB;
+    src: url(../font/MonumentExtended-Regular.otf);
+  }
+/* background */
+body {
+    background-image: url("../img/RC_Homepage_Bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   }
+/* Navbar */
+   .navbar-right {
+    float: right;
+  }
+
+  .navbar {
+    font-family: MonumentUB;
+  }
+
+  .nav-link{
+      color: #1b1b1b !important;
+  }
+
+.navSp {
+	width: 200px;
+	height: 40px;
+	background-color: #f4b318;
+	text-align: center;
+	margin-right: 2px;
+    border-radius: 25px;
+    color: white !important;
+}
+
+/* Card */
+.w3-card-4{
+    box-shadow:0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    font-family: MonumentUB;
+}
+
+.w3-container{
+    padding:0.01em 16px;
+}
+
+.cardR{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    --bs-gutter-x : 0 !important;
+}
+
+.rotated {
+  transform: rotate(-2deg); /* Equal to rotateZ(45deg) */
+}
+
+.rotated2 {
+  transform: rotate(2deg); /* Equal to rotateZ(45deg) */
+}
+
+/* Social Link */
+.fa {
+    padding: 8px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center !important;
+    text-decoration: none;
+
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #f4b318;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #f4b318;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #f4b318;
+    color: white;
+  }
+
+  @font-face{
+    font-family:"khalid-personal-regular";
+    src:url("https://cottoncottageindia.com/wp-content/uploads/2021/05/khalidpersonal.woff") format("woff"),
+    url("https://cottoncottageindia.com/wp-content/uploads/2021/05/khalidpersonal.ttf") format("opentype"),
+    url("https://cottoncottageindia.com/wp-content/uploads/2021/05/khalidpersonal.ttf") format("truetype");
+}
+.my-custom-font{
+font-family:"khalid-personal-regular" !important;
+};
