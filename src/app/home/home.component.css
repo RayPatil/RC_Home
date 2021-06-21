@@ -5,7 +5,7 @@
 .wrapper{
   display: flex;
   flex-direction: row;
-  width: 400vw;
+  width: 300vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
@@ -19,51 +19,17 @@
   position: absolute;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  overflow: auto;
+  /* this will hide the scrollbar in mozilla based browsers */
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+  /* this will hide the scrollbar in internet explorers */
+  -ms-overflow-style: none;
 }
 ::-webkit-scrollbar{
+  width: 0 !important;
   display: none;
 }
-
-html,
-    body {
-      position: relative;
-      height: 100%;
-    }
-
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
-
-    .swiper-container {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
-
 
 
 
@@ -72,41 +38,17 @@ html,
   font-family: MonumentUB;
   src: url(../../assets/font/MonumentExtended-Regular.otf);
 }
-/* background */
-body {
-  background-image: url("../../assets/img/RC_Homepage_Bg.jpg") !important;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
- }
-/* Navbar */
- .navbar-right {
-  float: right;
-}
 
-.navbar {
-  font-family: MonumentUB;
-}
 
-.nav-link{
-    color: #1b1b1b !important;
-}
 
-.navSp {
-width: 200px;
-height: 40px;
-background-color: #f4b318;
-text-align: center;
-margin-right: 2px;
-  border-radius: 25px;
-  color: white !important;
-}
 
 /* Card */
 .w3-card-4{
   box-shadow:0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
   font-family: MonumentUB;
 }
+
+
 
 .w3-container{
   padding:0.01em 16px;
@@ -117,7 +59,7 @@ margin-right: 2px;
   padding-right: 0 !important;
   --bs-gutter-x : 0 !important;
   background-image: url("../../assets/img/RC_Homepage_Bg.jpg") !important;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-attachment: fixed;
   background-size: cover;
 }
@@ -159,4 +101,26 @@ transform: rotate(2deg); /* Equal to rotateZ(45deg) */
   color: white;
 }
 
+/* section 3 */
 
+.rch3{
+  font-family: MonumentUB;
+  color:#4b4b4b;
+  display: inline-block;
+	text-align: left;
+
+}
+.s3Sp {
+  width: 63%;
+  height: 17% !important;
+  display:inline-block;
+  background-color: #f4b318;
+  text-align: center;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  margin-right: 2px;
+  border-radius: 25px;
+  color: white !important;
+  font-size: small;
+  text-decoration: none;
+  }
