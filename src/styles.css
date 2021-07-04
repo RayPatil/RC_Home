@@ -7,8 +7,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
+
 /* font */
 @font-face {
   font-family: MonumentUB;
@@ -24,6 +24,7 @@
   font-family: MonumentUB;
   padding-top: 0;
   padding-bottom: 0;
+  background-image: url("/assets/img/RC_Homepage_Bg.jpg") !important;
 }
 
 .nav-link{

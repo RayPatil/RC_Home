@@ -2,6 +2,7 @@
   width: 100vw;
   height: 100vh;
 }
+
 .wrapper{
   display: flex;
   flex-direction: row;
@@ -9,9 +10,11 @@
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
+
 .outer-wrapper{
   width: 100vh;
   height: 100vw;
+  background-image: url("../../assets/img/RC_Homepage_Bg_Rotated.jpg") !important;
   transform: rotate(-90deg) translateX(-100vh);
   transform-origin: top left;
   overflow-y: scroll;
@@ -26,12 +29,11 @@
   /* this will hide the scrollbar in internet explorers */
   -ms-overflow-style: none;
 }
+
 ::-webkit-scrollbar{
   width: 0 !important;
   display: none;
 }
-
-
 
 /* font */
 @font-face {
@@ -39,16 +41,11 @@
   src: url(../../assets/font/MonumentExtended-Regular.otf);
 }
 
-
-
-
 /* Card */
 .w3-card-4{
   box-shadow:0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
   font-family: MonumentUB;
 }
-
-
 
 .w3-container{
   padding:0.01em 16px;
@@ -58,7 +55,6 @@
   padding-left: 0 !important;
   padding-right: 0 !important;
   --bs-gutter-x : 0 !important;
-  background-image: url("../../assets/img/RC_Homepage_Bg.jpg") !important;
   /* background-repeat: no-repeat; */
   background-attachment: fixed;
   background-size: cover;
@@ -72,44 +68,70 @@ transform: rotate(-2deg); /* Equal to rotateZ(45deg) */
 transform: rotate(2deg); /* Equal to rotateZ(45deg) */
 }
 
-/* Social Link */
-.fa2 {
-  padding: 8px;
-  font-size: 20px;
-  width: 30px;
-  text-align: center !important;
-  text-decoration: none;
+/* Trying to align the social media icons to the bottom of the page */
+#social-icons {
+  /* background-color: red; */
+  position: absolute;
+  bottom: 10px;
+}
+
+/* Now styling css */
+#social-icons .fa {
+  background: #f4b318;
+  color: white;
+  /* color: yellow; */
   border-radius: 50%;
+  padding: 8px;
+  margin: 0 auto;
+  text-align: center !important;
+  font-size: 18px;
+  /* width: 30px; */
+  /* height: 30px; */
+  text-decoration: none;
 }
 
 .fa:hover {
   opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #f4b318;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #f4b318;
-  color: white;
-}
-
-.fa-instagram {
-  background: #f4b318;
-  color: white;
+  cursor: pointer;
 }
 
 /* section 3 */
-
 .rch3{
   font-family: MonumentUB;
   color:#4b4b4b;
   display: inline-block;
 	text-align: left;
-
 }
+
+.rch3 h1 {
+  font-size: 4.2em;
+}
+
+
+/* Animation of typewriter effect */
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end) 3,
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
 .s3Sp {
   width: 63%;
   height: 17% !important;
@@ -123,4 +145,4 @@ transform: rotate(2deg); /* Equal to rotateZ(45deg) */
   color: white !important;
   font-size: small;
   text-decoration: none;
-  }
+}
